@@ -1,15 +1,17 @@
 inherit gnome2
 
 NAME="gspell"
-VERSION=1.4.2
+VERSION=1.6.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GTK+ spell checking library"
 DESCRIPTION="gspell provides a flexible API to implement the spell checking in
 a GTK+ application."
 
-PKG_NAMES="libgspell1_1 libgspell1-common libgspell1-devel libgspell1-doc
+PKG_NAMES="gspell libgspell1_1 libgspell1-common libgspell1-devel libgspell1-doc
 	   girepository-Gspell1 vala-gspell1"
+gspell_CATEGORY="GNOME"
+gspell_CONTENTS="usr/bin/gspell-app1.exe"
 libgspell1_1_REQUIRES="iso-codes libgspell1-common"
 libgspell1_1_CONTENTS="
 	usr/bin/cyggspell-1-1.dll
